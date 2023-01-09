@@ -1,7 +1,19 @@
+<style>
+    body {
+        background-image: url('images/spotify-logo-neon-with-space-text-graphics-green-background_494516-186.webp');
+        background-repeat: no repeat;
+        background-size: cover;
+    }
+</style>
+
+<h1>Artists results:</h1>
+
+<div class="artists">
 {{#each artists}}
-<div>
-    <img src="{{this.images.0.url}}" alt="{{this.name}}">
+<div class="artist">
+    <img width="200px" src="{{this.images.0.url}}" alt="{{this.name}}">
     <h2>{{this.name}}</h2>
     <a href="/albums/{{this.id}}">View albums</a>
 </div>
 {{/each}}
+</div>

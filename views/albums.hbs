@@ -1,7 +1,13 @@
+
+
+<h1>Albums results:</h1>
+
+<div class="albums">
 {{#each albums}}
-<div>
-    <img src="{{this.images.0.url}}" alt="{{this.name}}">
+<div class="album">
+    <img width="200px" src="{{this.images.0.url}}" alt="{{this.name}}">
     <h2>{{this.name}}</h2>
     <a href="/albums/{{this.id}}/tracks">Show tracks</a>
 </div>
 {{/each}}
+</div>
