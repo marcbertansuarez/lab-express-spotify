@@ -113,8 +113,57 @@ h1 {
     background-color: lightgreen;
 }
 
+.albums {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album h2 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.album a {
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.album a:hover {
+    background-color: lightgreen;
+}
+
+.tracks {
+    margin-top: 30px;
+}
+
 .track {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 130px;
+    padding: 10px;
+    background-color: lightgrey;
+    width: 80%;   
 }
 
+.track h2 {
+    margin-left: 50px;
+}
+
+.track audio {
+    width: 50%;
+}
